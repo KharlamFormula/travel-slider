@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    145deg,
+    #0a2342,   
+    #1d3557,   
+    #457b9d   
+  );
+  font-family: "Montserrat", sans-serif;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: #DD0303;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+}
+
+.slider-container {
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #F4F4F4;
+  box-shadow: 0 10px 30px rgba(227, 224, 255, 0.39);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.btn {
+  color: #1909ff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  border: none;
+}
+
+.slide-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+
+.slide {
+  max-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+
+.slide-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.slide-title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #DD0303;
+}
+
+.slide-desc {
+  margin: 5px;
+  line-height: 1.6;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.toggle-btn {
+  font-style: italic;
+  border: none;
+  color: #0077ff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+
+ .slide-img {
+    height: 250px;
+    border-radius: 14px;
+  }
+
+  .slide-title {
+    font-size: 16px;
+  }
+
+  .slide-desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    width: 95%;
+    margin: 20px;
+  }
+
+  .buttons {
+    padding: 15px 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  .slider-container {
+    width: 90%;
+    margin: 20px;
+  }
+
+  .slide {
+    max-height: 70vh;   
+  }
+
+  .slide-img {
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .slide-title {
+    font-size: 15px;
+  }
+
+  .slide-desc {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  .toggle-btn {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+}
+
+
+
+
